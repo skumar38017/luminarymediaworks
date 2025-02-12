@@ -10,6 +10,8 @@
 
 # production
 /build
+luminarymediaworks.in-frontend.pem
+command.txt
 
 # misc
 .DS_Store
