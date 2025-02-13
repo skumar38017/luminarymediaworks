@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Footer from './Footer';
-import Homepagepic from './assests/Homepagepic.png';
 import './HomePage.css';
+import Homepagepic from './assests/Homepagepic.png';
 
 const HomePage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,18 +23,20 @@ const HomePage = () => {
           </button>
 
           <div className={`nav-links ${isMenuOpen ? 'show' : ''}`}>
-            <a href="#" className="nav-link">Home</a>
-            <a href="#" className="nav-link">Portfolio</a>
-            <a href="#" className="nav-link">Services</a>
-            <a href="#" className="nav-link">Contact us</a>
+            <a href="#home" className="nav-link">Home</a>
+            <a href="#portfolio" className="nav-link">Portfolio</a>
+            <a href="#services" className="nav-link">Services</a>
+            <a href="#contact" className="nav-link">Contact us</a>
           </div>
         </nav>
       </header>
 
       <main>
-        <section className="hero-section">
+        <section id="home" className="hero-section">
+          <div className="hero-background"></div>
           <div className="hero-overlay"></div>
           <div className="hero-content">
+            <h3 className='hero-subtitle'>SHREERAJ</h3>
             <h1 className="hero-title">LUMINARY MEDIA WORKS</h1>
             <p className="hero-subtitle">"Bringing Visions to Life, One Frame at a Time."</p>
           </div>
@@ -45,7 +47,7 @@ const HomePage = () => {
             <div className="image-placeholder">
               <img 
                 src={Homepagepic} 
-                alt="Homepage" 
+                alt="Featured work" 
                 className="responsive-image"
               />
             </div>
